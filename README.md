@@ -21,21 +21,23 @@
 
 **_4. Code snippet_**
 ```python
-#Create game display
-import pygame
+#import pygame, random
+
 pygame.init()
 WINDOW_WIDTH,WINDOW_HEIGHT=800,600
-displayscreen=pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
-pygame.display.set_caption("My first pygame!")
+
+displayscreen=pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+pygame.display.set_caption("Touch Julia!")
 
 ```
 ```python
-#built image object and setting its rec
-player_image=pygame.image.load("angry_bird.png")
-player_rect=player_image.get_rect()
-player_rect.left=32
-player_rect.centery=WINDOW_HEIGHT//2
-displayscreen.blit(player_image,player_rect)
+bg_image=pygame.image.load("poo.png")
+bg_rect=bg_image.get_rect()
+bg_rect.topleft=(0,0)
+
+cat_image=pygame.image.load("FFF.png")
+cat_rect=cat_image.get_rect()
+cat_rect.center=(WINDOW_WIDTH//2,WINDOW_HEIGHT//2)
 ```
 **_5. Game Assets:_**:<br>
 [Icon Archive](https://iconarchive.com/) : provide lots of game charators to download<br>
